@@ -18,7 +18,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
-	</properties>
+        <spring-cloud.version>Greenwich.RC2</spring-cloud.version>
+    </properties>
 
 	<dependencies>
 		<dependency>
@@ -37,7 +38,25 @@
 			<artifactId>spring-cloud-config-server</artifactId>
             <version>1.4.3.RELEASE</version>
 		</dependency>
+
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>1.4.4.RELEASE</version>
+        </dependency>
 	</dependencies>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
 	<build>
 		<plugins>

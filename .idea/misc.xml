@@ -6,6 +6,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-server/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-config-client/pom.xml" />
+        <option value="$PROJECT_DIR$/cloud-config-eureka/pom.xml" />
       </list>
     </option>
   </component>
